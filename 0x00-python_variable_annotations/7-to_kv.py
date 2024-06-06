@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-# This script defines a function to_kv that takes a string and a number as input
-# and returns a tuple containing the string and the square of the number.
+# This script defines a function to_kv that takes a string and a number as input..
 from typing import Union, Tuple
 
 
