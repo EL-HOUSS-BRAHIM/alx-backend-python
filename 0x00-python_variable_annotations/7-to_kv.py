@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""This script defines a function to_kv that takes a string and a number as input.."""
+"""This script defines a function to_kv that takes a string 
+and a number as input.."""
 from typing import Union, Tuple
 
 
