@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import Sequence, Union, Any, TypeVar
 
 T = TypeVar('T')
