@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from typing import List, Tuple, Sequence
 # This script defines a function element_length that takes a list of sequences as input
 # and returns a list of tuples, where each tuple contains a sequence and its length.
+from typing import List, Tuple, Sequence
 
 
 def element_length(lst: List[Sequence]) -> List[Tuple[Sequence, int]]:

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from typing import List, Tuple
 '''Creates multiple copies of items in a tuple.'''
+from typing import List, Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
