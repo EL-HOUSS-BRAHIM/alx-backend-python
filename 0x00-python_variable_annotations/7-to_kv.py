@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""This script defines a function to_kv that takes a string 
-and a number as input..
-"""
+'''Task 7's module.'''
 from typing import Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    """Converts a string and a number to a tuple containing the 
-    string and the square of the number.
-    """
+    '''Converts a key and its value to a tuple of the key and
+    the square of its value.
+    '''
     return (k, float(v**2))
