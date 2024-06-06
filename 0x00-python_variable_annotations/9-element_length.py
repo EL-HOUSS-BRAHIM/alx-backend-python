@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""This script defines a function element_length that takes a list of sequences as input"""
-from typing import List, Tuple, Sequence
+'''Task 9's module.
+'''
+from typing import Iterable, List, Sequence, Tuple
 
 
-def element_length(lst: List[Sequence]) -> List[Tuple[Sequence, int]]:
-    """
-    Calculate the length of each sequence in the input list and return a list of tuples
-    where each tuple contains a sequence and its length.
-    """
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    '''Computes the length of a list of sequences.
+    '''
     return [(i, len(i)) for i in lst]
