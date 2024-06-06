@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Define a function safe_first_element that takes a sequence lst of type T and returns a Union of type T and None
+"""Define a function safe_first_element that takes a sequence lst of type T and returns a Union of type T and None"""
 
 from typing import Sequence, Union, Any, TypeVar
 # Define a generic type variable T
