@@ -4,6 +4,7 @@ import sqlite3
 import functools
 from typing import Callable
 import logging
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)
 
@@ -15,7 +16,8 @@ def log_queries() -> Callable:
             # Log the query if it's passed as a keyword argument
             query = kwargs.get('query', args[0] if args else None)
             if query:
-                logging.info(f"Executing query: {query}")
+                timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                logging.info(f"[{timestamp}] Executing query: {query}")
             return func(*args, **kwargs)
         return wrapper
     return decorator
