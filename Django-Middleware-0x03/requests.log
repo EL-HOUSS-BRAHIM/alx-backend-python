@@ -1,0 +1,107 @@
+
+2025-06-08 11:40:07.709825 - User: AnonymousUser - Path: /api/token/
+2025-06-08 11:40:08.711545 - User: AnonymousUser - Path: /favicon.ico
+2025-06-08 11:40:30.278314 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 11:40:30.464519 - User: AnonymousUser - Path: /favicon.ico
+2025-06-08 11:57:37.193376 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 11:57:37.434624 - User: AnonymousUser - Path: /favicon.ico
+2025-06-08 12:28:45.307123 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:28:45.566904 - User: AnonymousUser - Path: /favicon.ico
+2025-06-08 12:30:12.443131 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:31:02.736513 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:31:07.332861 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:31:50.608630 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:32:08.064379 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:33:11.711328 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:43:29.028364 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 12:59:33.562710 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:02:42.142447 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:04:45.990112 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:04:46.338636 - User: AnonymousUser - Path: /favicon.ico
+2025-06-08 13:06:36.760093 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:06:37.015408 - User: AnonymousUser - Path: /favicon.ico
+2025-06-08 13:06:44.760608 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:07:04.551429 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:08:42.332009 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:08:47.209823 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:09:03.015800 - User: AnonymousUser - Path: /api-authlogin/
+2025-06-08 13:09:03.784285 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:09:04.046962 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 13:09:32.749978 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:11:37.456368 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:11:38.481217 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 13:14:36.867624 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:15:13.683349 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:18:05.653962 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:26:41.681713 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:27:06.419717 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:27:42.477629 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:31:22.060495 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:46:20.175384 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:46:21.220639 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 13:46:37.627238 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:59:11.777514 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 13:59:16.147729 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 14:02:53.830166 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 14:02:54.845632 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 15:18:03.983592 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:18:04.999946 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 15:18:07.274672 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:18:08.313050 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 15:18:09.396061 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:18:11.848232 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:18:13.911674 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:18:17.230684 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:37:31.050720 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:37:34.453236 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:37:37.601203 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:37:39.625836 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:37:44.369696 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:37:47.687119 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:38:07.711362 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:38:15.562918 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:38:18.778094 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:38:20.778029 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:38:22.731704 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:38:24.641092 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:39:56.109409 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:39:59.787661 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:40:03.014835 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:40:05.271240 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:40:08.094783 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:40:11.964558 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:37.161214 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:40.410327 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:42.318277 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:44.571676 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:49.080523 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:52.486117 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:55:56.457330 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:56:33.713211 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:56:57.331551 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:56:59.598769 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:57:02.125232 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:57:04.704846 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:57:06.775606 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 15:57:08.891869 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:01:27.604767 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:01:32.181326 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:01:42.545464 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:01:43.627042 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 16:01:45.921029 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:01:47.021729 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /favicon.ico
+2025-06-08 16:01:52.351560 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:01:55.862390 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:15:41.939041 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:15:45.419459 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:15:48.757149 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:15:52.064304 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:15:55.301647 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:15:57.543817 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:56:31.838339 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:56:35.105712 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:56:38.260470 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:56:40.485880 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:56:42.887007 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 16:56:45.508069 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
+2025-06-08 17:00:27.088573 - User: LeDuc(email: 'patrick@example.com', id: '5da62843-5dd8-4bf3-9cb6-6bf5ed392d12') - Path: /api/token/
