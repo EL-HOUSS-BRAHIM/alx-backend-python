@@ -1,0 +1,12 @@
+<!-- Django-Chat/templates/chat/message_history.html -->
+<h1>Message History</h1>
+<p><strong>Sender:</strong> {{ message.sender }}</p>
+<p><strong>Receiver:</strong> {{ message.receiver }}</p>
+<p><strong>Current Content:</strong> {{ message.content }}</p>
+
+<h2>History:</h2>
+<ul>
+    {% for history in history %}
+        <li><strong>Edited on:</strong> {{ history.timestamp }} - {{ history.old_content }}</li>
+    {% endfor %}
+</ul>
