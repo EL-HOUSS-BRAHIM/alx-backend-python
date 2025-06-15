@@ -1,0 +1,9 @@
+C:\Users\HP\Desktop\ALX\BackEnd ProDev\alx-backend-python\Django-Middleware-0x03\chats\middleware.py changed, reloading.
+C:\Users\HP\Desktop\ALX\BackEnd ProDev\alx-backend-python\Django-Middleware-0x03\chats\middleware.py changed, reloading.
+C:\Users\HP\Desktop\ALX\BackEnd ProDev\alx-backend-python\Django-Middleware-0x03\chats\middleware.py changed, reloading.
+[REQUEST START] 2025-06-14 23:25:34.138004 - User: Anonymous - IP: 127.0.0.1 - Method: GET - Path: / - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[REQUEST END] 2025-06-14 23:25:34.138004 - User: Anonymous - Method: GET - Path: / - Status: 403 - Response Time: 0.000s
+Forbidden: /
+[REQUEST START] 2025-06-14 23:25:34.903412 - User: Anonymous - IP: 127.0.0.1 - Method: GET - Path: /favicon.ico - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[REQUEST END] 2025-06-14 23:25:34.903412 - User: Anonymous - Method: GET - Path: /favicon.ico - Status: 403 - Response Time: 0.000s
+Forbidden: /favicon.ico
