@@ -1,184 +1,101 @@
 from django.test import TestCase
-from django.contrib.auth import get_user_model
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from .models import Message, Notification
+from django.contrib.auth.models import User
+from .models import Message, Notification, MessageHistory
+from django.utils import timezone
+from .models import Message
 
-User = get_user_model()
 
-class MessagingModelsTestCase(TestCase):
+class NotificationTestCase(TestCase):
+    
     def setUp(self):
-        """Set up test data"""
-        self.user1 = User.objects.create_user(
-            username='testuser1',
-            email='user1@test.com',
-            password='testpass123'
-        )
-        self.user2 = User.objects.create_user(
-            username='testuser2',
-            email='user2@test.com',
-            password='testpass123'
-        )
-    
-    def test_message_creation(self):
-        """Test creating a message"""
-        message = Message.objects.create(
-            sender=self.user1,
-            receiver=self.user2,
-            content='Hello, this is a test message!'
-        )
-        
-        self.assertEqual(message.sender, self.user1)
-        self.assertEqual(message.receiver, self.user2)
-        self.assertEqual(message.content, 'Hello, this is a test message!')
-        self.assertFalse(message.is_read)
-        self.assertIsNotNone(message.message_id)
-        self.assertIsNotNone(message.timestamp)
-    
+        # Creating two users
+        self.sender = User.objects.create_user(username='sender', password='password')
+        self.receiver = User.objects.create_user(username='receiver', password='password')
+
     def test_notification_creation(self):
-        """Test creating a notification"""
+        # Send a message from sender to receiver
         message = Message.objects.create(
-            sender=self.user1,
-            receiver=self.user2,
-            content='Test message for notification'
+            sender=self.sender,
+            receiver=self.receiver,
+            content="Hello, this is a test message!"
         )
         
-        notification = Notification.objects.create(
-            user=self.user2,
-            message=message,
-            notification_type='message',
-            title='New message from testuser1',
-            content='You have received a new message'
+        # Check if a notification has been created for the receiver
+        notification = Notification.objects.filter(user=self.receiver, message=message).exists()
+        self.assertTrue(notification)
+        
+    def test_no_notification_for_non_receiver(self):
+        # Send a message from sender to receiver
+        message = Message.objects.create(
+            sender=self.sender,
+            receiver=self.receiver,
+            content="Another test message!"
         )
         
-        self.assertEqual(notification.user, self.user2)
-        self.assertEqual(notification.message, message)
-        self.assertEqual(notification.notification_type, 'message')
-        self.assertFalse(notification.is_read)
-        self.assertIsNotNone(notification.notification_id)
-        self.assertIsNotNone(notification.created_at)
+        # Check that no notification is created for the sender
+        notification = Notification.objects.filter(user=self.sender, message=message).exists()
+        self.assertFalse(notification)
 
-class MessagingSignalsTestCase(TestCase):
+
+class MessageTestCase(TestCase):
+
     def setUp(self):
-        """Set up test data"""
-        self.user1 = User.objects.create_user(
-            username='testuser1',
-            email='user1@test.com',
-            password='testpass123'
-        )
-        self.user2 = User.objects.create_user(
-            username='testuser2',
-            email='user2@test.com',
-            password='testpass123'
-        )
-    
-    def test_message_notification_signal(self):
-        """Test that creating a message automatically creates a notification"""
-        # Count initial notifications
-        initial_count = Notification.objects.count()
-        
+        self.user1 = User.objects.create_user(username='user1', password='password')
+        self.user2 = User.objects.create_user(username='user2', password='password')
+
+    def test_message_edit(self):
         # Create a message
-        message = Message.objects.create(
-            sender=self.user1,
-            receiver=self.user2,
-            content='This should trigger a notification'
-        )
+        message = Message.objects.create(sender=self.user1, receiver=self.user2, content="Hello!")
         
-        # Check that a notification was created
-        self.assertEqual(Notification.objects.count(), initial_count + 1)
-        
-        # Get the created notification
-        notification = Notification.objects.get(user=self.user2, message=message)
-        
-        # Verify notification details
-        self.assertEqual(notification.user, self.user2)
-        self.assertEqual(notification.message, message)
-        self.assertEqual(notification.notification_type, 'message')
-        self.assertIn('testuser1', notification.title)
-        self.assertIn('This should trigger a notification', notification.content)
-        self.assertFalse(notification.is_read)
-    
-    def test_message_read_notification_update(self):
-        """Test that marking a message as read updates the notification"""
-        # Create a message (which creates a notification)
-        message = Message.objects.create(
-            sender=self.user1,
-            receiver=self.user2,
-            content='Test message for read status'
-        )
-        
-        # Get the notification
-        notification = Notification.objects.get(user=self.user2, message=message)
-        self.assertFalse(notification.is_read)
-        
-        # Mark message as read
-        message.is_read = True
+        # Edit the message
+        message.content = "Hello, how are you?"
         message.save()
-        
-        # Refresh notification from database
-        notification.refresh_from_db()
-        
-        # Check that notification is now marked as read
-        self.assertTrue(notification.is_read)
-    
-    def test_multiple_messages_multiple_notifications(self):
-        """Test that multiple messages create multiple notifications"""
-        # Create multiple messages
-        for i in range(3):
-            Message.objects.create(
-                sender=self.user1,
-                receiver=self.user2,
-                content=f'Message {i + 1}'
-            )
-        
-        # Check that 3 notifications were created
-        self.assertEqual(Notification.objects.filter(user=self.user2).count(), 3)
-        
-        # Verify each notification has correct content
-        notifications = Notification.objects.filter(user=self.user2).order_by('created_at')
-        for i, notification in enumerate(notifications):
-            self.assertIn(f'Message {i + 1}', notification.content)
 
-class MessagingModelMethodsTestCase(TestCase):
+        # Fetch the message again and check if it was edited
+        message.refresh_from_db()
+
+        # Check that the edited fields were updated
+        self.assertTrue(message.edited)
+        self.assertEqual(message.edited_by, self.user1)  # The user who edited the message
+        self.assertTrue(message.edited_at <= timezone.now())  # The timestamp should be current or before now
+
+        # Check if the message history was created
+        history = MessageHistory.objects.filter(message=message)
+        self.assertEqual(history.count(), 1)
+        self.assertEqual(history.first().old_content, "Hello!")
+
+
+class ThreadedMessageTestCase(TestCase):
     def setUp(self):
-        """Set up test data"""
-        self.user1 = User.objects.create_user(
-            username='testuser1',
-            email='user1@test.com',
-            password='testpass123'
-        )
-        self.user2 = User.objects.create_user(
-            username='testuser2',
-            email='user2@test.com',
-            password='testpass123'
-        )
-    
-    def test_message_str_method(self):
-        """Test Message __str__ method"""
-        message = Message.objects.create(
-            sender=self.user1,
-            receiver=self.user2,
-            content='Test message'
-        )
-        
-        expected_str = f"Message from {self.user1.username} to {self.user2.username} at {message.timestamp}"
-        self.assertEqual(str(message), expected_str)
-    
-    def test_notification_str_method(self):
-        """Test Notification __str__ method"""
-        message = Message.objects.create(
-            sender=self.user1,
-            receiver=self.user2,
-            content='Test message'
-        )
-        
-        notification = Notification.objects.create(
-            user=self.user2,
-            message=message,
-            notification_type='message',
-            title='Test notification',
-            content='Test content'
-        )
-        
-        expected_str = f"Notification for {self.user2.username}: Test notification"
-        self.assertEqual(str(notification), expected_str) 
+        self.user1 = User.objects.create_user(username='alice', password='password')
+        self.user2 = User.objects.create_user(username='bob', password='password')
+
+        # Message racine
+        self.root = Message.objects.create(sender=self.user1, receiver=self.user2, content="Message principal")
+
+        # Réponse directe
+        self.reply1 = Message.objects.create(sender=self.user2, receiver=self.user1, content="Réponse 1", parent_message=self.root)
+
+        # Réponse à une réponse
+        self.reply2 = Message.objects.create(sender=self.user1, receiver=self.user2, content="Réponse 1.1", parent_message=self.reply1)
+
+    def test_thread_structure(self):
+        # Le message racine ne doit pas avoir de parent
+        self.assertIsNone(self.root.parent_message)
+
+        # Le message root doit avoir 1 réponse directe
+        self.assertEqual(self.root.replies.count(), 1)
+        self.assertIn(self.reply1, self.root.replies.all())
+
+        # La première réponse a aussi une réponse
+        self.assertEqual(self.reply1.replies.count(), 1)
+        self.assertIn(self.reply2, self.reply1.replies.all())
+
+        # Le dernier message n’a pas de réponse
+        self.assertEqual(self.reply2.replies.count(), 0)
+
+
+def test_unread_manager(self):
+    unread = Message.unread.for_user(self.user2)
+    self.assertIn(self.msg_unread, unread)
+    self.assertNotIn(self.msg_read, unread)
