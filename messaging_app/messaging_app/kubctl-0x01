@@ -1,0 +1,13 @@
+#!/bin/bash
+# Scale to 3 replicas
+kubectl scale deployment messaging-app --replicas=3
+
+# Verify scaling
+kubectl get pods
+
+# Monitor resource usage
+kubectl top pods
+
+# Basic load testing
+wrk http://<minikube-ip>:<nodePort>  # or via Ingress later
+

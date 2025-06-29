@@ -1,0 +1,8 @@
+extern
+yment.yaml
+kubectl apply -f green_deployment.yaml
+kubectl apply -f kubeservice.yaml
+
+# Check logs of the green deployment
+kubectl logs -l app=messaging-green
+
